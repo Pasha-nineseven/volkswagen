@@ -27,7 +27,7 @@ gulp.task('scripts', function(){
     return gulp.src([
         'app/libs/jquery/dist/jquery.min.js',
         'app/libs/modernizr/modernizr.min.js',
-        // 'app/libs/slick/slick.min.js',
+        'app/libs/slick/slick.min.js',
         // 'app/libs/magnific/jquery.magnific-popup.js',
     ])
     .pipe(concat('libs.min.js'))

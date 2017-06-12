@@ -14,6 +14,8 @@ html{
 
 body{
 	height: 100%;
+	line-height: 1.42857;
+	overflow-x: hidden;
 }
 *:focus {
 	outline: none;
@@ -37,7 +39,16 @@ textarea,input {
 }
 
 a{
+	color: #0099da;
+    text-decoration: none;
 	@include transition (color 0.3s linear);
+	&:focus,
+	&:active,
+	&:visited{
+		text-decoration: none;
+		color: #0099da;
+	}
+
 }
 
 body {

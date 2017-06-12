@@ -1,22 +1,68 @@
 $(document).ready(function() {
-	// $("body").on("click", ".test", function(e){
-	// 	e.preventDefault();
-	// })
+	//SCROLLTOP
+	$("body").on("click", ".page-top-anchor__link", function(e){
+		e.preventDefault();
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+	});
 
+
+	//DETAILS SLIDER
+	if ($('.details__slider').length>0) {
+		sliderDetailsStart();
+	}
 });
 
 
 
 
 $(window).resize(function () {
-
+	if ($('.details__slider').length>0) {
+		sliderDetailsStart();
+	}
 });
+
+
+
+
+		
 
 // $(window).load(function(){
 
 // });
 
 // functions
+
+
+function sliderDetailsStart(){
+
+	var $tab_a = $('.details__slider');
+
+	if($(window).width() < 768){
+		$tab_a.not('.slick-initialized').slick({
+			infinite: false,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			useTransform:true,
+			"accessibility": false,
+			arrows: false,
+			responsive: [
+			    {
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						dots: true,
+					}
+			    },
+		  	]
+		});
+	}else{
+		if($tab_a.hasClass('slick-initialized')) {
+			$tab_a.slick("unslick");
+		}
+	}
+}
+
 
 
 // links pages
