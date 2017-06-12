@@ -913,7 +913,10 @@ textarea, input {
   padding-left: 80px;
   padding-right: 80px; }
 
-.page-header {
+.page-header__logo {
+  display: block; }
+
+.page-nav {
   top: 0;
   z-index: 1000;
   position: fixed;
@@ -932,10 +935,15 @@ textarea, input {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-          flex-direction: column; }
-
-.page-header__logo {
-  display: block; }
+          flex-direction: column;
+  background: #fff;
+  border-right: 1px solid transparent; }
+  .page-nav.page-nav--border {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    border-right: 1px solid #dee1e3; }
+    .page-nav.page-nav--border .page-nav__more .vw_m502_icon {
+      fill: #0099da; }
 
 .page-nav__list {
   padding: 0;
@@ -989,6 +997,32 @@ textarea, input {
   font: 12px/13px 'VWHeadWeb-Bold';
   letter-spacing: -0.25px;
   margin: 0 10px; }
+
+.page-nav-sublayer {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: -159px;
+  width: 245px;
+  height: 100%;
+  padding: 0;
+  padding: 50px 20px;
+  -webkit-box-shadow: 5px -10px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px -10px 20px rgba(0, 0, 0, 0.1);
+  color: #808890;
+  font: 12px/13px 'VWHeadWeb-Regular';
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #fff;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: left 300ms cubic-bezier(0.18, 0, 0.14, 1), right 300ms cubic-bezier(0.18, 0, 0.14, 1);
+  transition: left 300ms cubic-bezier(0.18, 0, 0.14, 1), right 300ms cubic-bezier(0.18, 0, 0.14, 1); }
+  .page-nav-sublayer.open {
+    -webkit-transition: left 300ms cubic-bezier(0.18, 0, 0.14, 1), right 300ms cubic-bezier(0.18, 0, 0.14, 1);
+    transition: left 300ms cubic-bezier(0.18, 0, 0.14, 1), right 300ms cubic-bezier(0.18, 0, 0.14, 1);
+    left: 96px; }
 
 .page-top {
   background-size: cover;

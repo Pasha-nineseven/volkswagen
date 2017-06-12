@@ -10,6 +10,13 @@ $(document).ready(function() {
 	if ($('.details__slider').length>0) {
 		sliderDetailsStart();
 	}
+
+	//LEFT-MENU
+	$("body").on("click", ".page-nav__more", function(e){
+		e.preventDefault();
+		$(this).parents('.page-nav').toggleClass('page-nav--border');
+		$('.page-nav-sublayer').toggleClass('open');
+	});	
 });
 
 
