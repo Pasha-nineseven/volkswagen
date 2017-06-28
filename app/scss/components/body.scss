@@ -44,7 +44,8 @@ a{
 	@include transition (color 0.3s linear);
 	&:focus,
 	&:active,
-	&:visited{
+	&:visited,
+	&:hover{
 		text-decoration: none;
 		color: #0099da;
 	}
