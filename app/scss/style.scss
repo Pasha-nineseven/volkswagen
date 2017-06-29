@@ -212,6 +212,7 @@ a.btn{
 		background-color: #0068aa;
     	border-color: #0068aa;
     	box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+    	color: #fff;
 	}
 }
 
@@ -649,6 +650,18 @@ a.page-top-bar__item{
     	color: #fff;
     }
 }
+span.page-top-bar__item{
+	float: left;
+	display: block;
+    padding-right: 18px;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: 'VWHeadWeb-Bold', sans-serif;
+    color: #fff;
+    &:last-child{
+    	padding-right: 0;
+    }
+}
 
 
 .page-second-bar{
@@ -670,6 +683,21 @@ a.page-second-bar__item{
     	color: #fff;
     }
 }
+
+span.page-second-bar__item{
+	// display: table-cell;
+	float: left;
+	display: block;
+    padding-right: 18px;
+    font-size: 16px;
+    line-height: 32px;
+    font-family: 'VWHeadWeb-Bold', sans-serif;
+    color: #fff;
+    &:last-child{
+    	padding-right: 0;
+    }
+}
+
 
 .page-second-bar__list{
 	min-height: 55px;
@@ -1257,7 +1285,6 @@ a.page-second-bar__item{
 }
 
 .r-tabs .r-tabs-panel {
-    padding: 15px;
     display: none;
 }
 
@@ -1937,7 +1964,134 @@ a.breadcrumbs__item{
 	overflow: hidden;
 }
 
+.container-indent{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.mobile-menu__item span.mobile-menu__link{
+  color: #0099da;
+}
+.mobile-menu__item span.mobile-menu__link .vw_m502_icon{
+  fill: #0099da;
+}
+span.page-nav__link .page-nav__icon-wrap .vw_m502_icon{
+  fill: #0099da;
+}
+span.page-nav__link .page-nav__title{
+  color: #0099da;
+}
+span.page-nav-sublayer__link .page-nav__title{
+  color: #0099da;
+}
+span.page-nav-sublayer__link .vw_m502_icon{
+   fill: #0099da;
+}
 
+.page-top-bar__wrapper span.page-top-bar__item{
+  color: #fff;
+}
+.workarea table.map-columns tr:nth-child(odd) td {
+    background-color: transparent;
+}
+.workarea table.map-columns{
+  width: auto;
+  font-size: 14px;
+}
+.map-columns ul{
+  margin: 0; 
+}
+
+.workarea table.map-columns td{
+    padding: 0 20px 0 0;
+}
+ul.map-level-0 a {
+    font-weight: normal!important;
+}
+
+.layout--404 .page-top {
+    height: auto;
+    background: transparent!important;
+}
+.layout--404 .page-top__headline {
+    color: #000;
+}
+.layout--404 .page-top__headline h1 {
+    color: #000;
+    font-size: 28px;
+}
+.layout--404 .page-top-nav__title{
+  color: #000;
+}
+
+.page-second-bar__wrapper span.page-second-bar__item{
+  color: #fff;
+}
+
+.page-search{
+  margin-bottom: 50px;
+  color: #808890;
+  position: relative;
+  width: 100%;
+}
+.page-search:before{
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/svg/search.svg) center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+.page-search input[type="text"]{
+  padding-left: 45px;
+  font-size: 18px;
+  color: #000;
+  height: 45px;
+  line-height: 45px;
+  width: 100%;
+}
+
+
+.news-item{
+  margin-bottom: 30px;
+}
+.news-item__title{
+  margin-bottom: 10px;
+}
+
+.news-date-time{
+    color: #808890;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.news-date-title{
+  font-size: 28px;
+}
+
+
+.layout--news{
+	.page-content{
+		&>.container-fluid{
+			padding: 0; 
+		}
+	}
+}
+
+.news__item{
+	padding-top: 0;
+}
+
+.content-item__date{
+	color: #808890;
+	margin-top: 18px;
+	font-size: 14px;
+    line-height: 22px;
+}
 
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
@@ -2258,7 +2412,8 @@ a.breadcrumbs__item{
 	.page-top-bar__wrapper {
 	    display: block;
 	}
-	a.page-top-bar__item {
+	a.page-top-bar__item,
+	span.page-top-bar__item{
 	    padding-right: 10px;
 	    font-size: 14px;
 	    line-height: 18px;
@@ -2421,6 +2576,16 @@ a.breadcrumbs__item{
 	    background-image: url(../img/content/product-top-bg.jpg);
 	    background-repeat: no-repeat;
 	    background-position: bottom center;
+	}
+	.workarea table.map-columns{
+		width: 100%;
+	}
+	.workarea table.map-columns td {
+		padding: 0;
+		display: block;
+	}
+	.map-level-0{
+		padding-left: 13px;
 	}
 }
 
