@@ -10,7 +10,10 @@ var needsUpdate0 = true;
 // var needsRemove = true;
 
 $(document).ready(function() {
+	//flex polyfill
+	flexibility(document.documentElement);
 
+	//menu-init
 	leftMenuReinit();
 
 	//SCROLLTOP
@@ -227,7 +230,12 @@ $(document).ready(function() {
 
 
 
-
+    //F-STYLER
+    if ($('.fs').length>0) {
+		setTimeout(function() {
+		  $('.fs').styler();
+		}, 10)
+	}
 });
 
 

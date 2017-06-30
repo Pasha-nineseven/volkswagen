@@ -1,0 +1,31 @@
+.layout{
+	// display: table;
+	// table-layout: fixed;
+ //  	height: 100%;
+ //  	width: 100%;
+}
+
+
+.layout--404 .page-top {
+    height: auto;
+    background: transparent!important;
+}
+.layout--404 .page-top__headline {
+    color: #000;
+}
+.layout--404 .page-top__headline h1 {
+    color: #000;
+    font-size: 28px;
+}
+.layout--404 .page-top-nav__title{
+  color: #000;
+}
+
+
+.layout--news{
+	.page-content{
+		&>.container-fluid{
+			padding: 0; 
+		}
+	}
+}
