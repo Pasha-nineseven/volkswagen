@@ -29,3 +29,11 @@
 		}
 	}
 }
+
+.layout--text{
+	.page-content{
+		&>.container-fluid{
+			padding: 0; 
+		}
+	}
+}

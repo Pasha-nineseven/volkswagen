@@ -1708,15 +1708,18 @@ span.page-second-bar__item{
 	line-height: 110px;
 	vertical-align: middle;
 	margin-bottom: 20px;
+	text-align: center;
 	img{
 		max-width: 100%;
 		height: auto;
 		max-height: 100%;
+		display: inline-block;
 	}
 }
 
 .product-info-img__inner{
 	margin-bottom: 20px;
+	padding: 0 20px; 
 	img{
 		max-width: 100%;
 		height: auto;
