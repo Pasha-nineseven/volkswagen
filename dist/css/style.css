@@ -2537,6 +2537,23 @@ a.breadcrumbs__item {
 
 .news__item {
   padding-top: 0; }
+  .news__item.news__item--no-image .content-item__headline,
+  .news__item.news__item--no-image .content-item__info,
+  .news__item.news__item--no-image .content-item__media {
+    width: 100%; }
+  .news__item.news__item--no-image .content-item__media {
+    margin-top: 0;
+    float: none;
+    text-align: left;
+    clear: both; }
+  .news__item.news__item--no-image .content-item__date {
+    float: none;
+    color: #000;
+    font-family: 'VWHeadWeb-Bold', sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px; }
+  .news__item.news__item--no-image .content-item__headline {
+    margin-bottom: 0; }
 
 .content-item__date {
   color: #808890;

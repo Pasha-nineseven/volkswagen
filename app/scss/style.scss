@@ -2130,6 +2130,29 @@ a.breadcrumbs__item{
 
 .news__item{
 	padding-top: 0;
+	&.news__item--no-image{
+		.content-item__headline,
+		.content-item__info,
+		.content-item__media{
+			width: 100%;
+		}
+		.content-item__media{
+			margin-top: 0;
+			float: none;
+			text-align: left;
+			clear: both;
+		}
+		.content-item__date{
+			float: none;
+			color: #000;
+			font-family: 'VWHeadWeb-Bold', sans-serif;
+			font-size: 18px;
+			margin-bottom: 15px;
+		}
+		.content-item__headline{
+			margin-bottom: 0;
+		}
+	}
 }
 
 .content-item__date{
@@ -2233,5 +2256,9 @@ a.breadcrumbs__item{
     	}
     }
 }
+
+
+
+
 
 @import "components/media";
