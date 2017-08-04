@@ -17,7 +17,7 @@
 	</head>
 	<body>
 		<!--LAYOUT-->
-		<div class="layout layout--news">
+		<div class="layout layout--drive">
 			<header class="page-header">
 				<nav class="page-nav">
 					<ul class="page-nav__list">
@@ -671,85 +671,345 @@
 								</a>
 							</nav>
 							<div class="page-top__headline">
-								<h1>Новости Volkswagen</h1>
-							</div>
-						</div>
-					</div>
-					<div class="page-top-bar">
-						<div class="container-fluid">
-							<div class="page-top-bar__list">
-								<div class="page-top-bar__wrapper">
-									<span class="page-top-bar__item">2017</span>
-									<a href="#" class="page-top-bar__item">2016</a>
-									<a href="#" class="page-top-bar__item">Дилерские новости</a>
-								</div>
+								<h1>Тест драйв</h1>
 							</div>
 						</div>
 					</div>
 					<!-- CONTENT-PART -->
 					<div class="container-fluid container-indent">
-						<div class="news-tabs">
-						    <ul>
-						        <li class="news-tabs__item active"><a href="#">Июнь</a></li>
-						        <li class="news-tabs__item"><a href="#">Май</a></li>
-						        <li class="news-tabs__item"><a href="#">Апрель</a></li>
-						    </ul>
-					    	<div class="container-fluid">
-						    	<div class="content-item news__item content-item--left">
-									<div class="row content-inner">
-										<div class="col-xs-12 col-sm-5 content-item__headline">
-											<h3>Новый Tiguan представлен на Volkswagen Festival</h3>
-										</div>
-										<div class="col-xs-12 col-sm-6 content-item__media">
-											<img src="img/content/service-img1.jpg" alt="">
-											<div class="content-item__date">23.12.2016</div>
-										</div>
-										<div class="col-xs-12 col-sm-5 content-item__info">
-											<p>
-												В связи с благоприятной рыночной конъюнктурой и ростом продаж в России марка Volkswagen — легковые автомобили репозиционирует Volkswagen Passat и объявляет о новых, более привлекательных ценах.
-											</p>
-											<div class="t-center">
-												<a href="#" class="btn">Подробнее</a>
+						<div class="afbf alx_feed_back" id="alx_feed_back_FIDtest_drive">
+							<div class="afbf_feedback_poles">
+								<div class="test-drive-form">
+									<form id="f_feedback_FIDtest_drive" name="f_feedback_FIDtest_drive" action="/test-drive/?bitrix_include_areas=N" method="post" enctype="multipart/form-data">
+										<input type="hidden" name="FEEDBACK_FORM_FIDtest_drive" value="Y">
+										<input type="hidden" name="HREF_LINK_FIDtest_drive" value="/test-drive/?bitrix_include_areas=N">
+										<div class="test-drive-form__item test-drive-form-car">
+											<div id="afbf_prop_auto_model_fidtest_drive" class="afbf_item_pole is_filled required">
+												<div class="afbf_name">
+													Модель <span class="afbf_required_text">*</span>
+													<div class="afbf_hint"></div>
+												</div>
+												<div class="afbf_radio" id="error_PROP_AUTO_MODEL_FIDtest_drive">
+													<label for="PROP_AUTO_MODEL_FIDtest_drive_101">
+														<input id="PROP_AUTO_MODEL_FIDtest_drive_101" type="radio" name="FIELDS[PROP_AUTO_MODEL_FIDtest_drive]" value="101">
+														<span class="afbf_radio_circle"></span>
+														<span class="afbf_radio_check"></span>
+														<span class="test-drive-form-car__img">
+															<img src="img/content/polo-min.png" alt="">
+														</span>
+														<span class="test-drive-form-car__title">
+															Bora
+														</span>
+													</label>
+													<label for="PROP_AUTO_MODEL_FIDtest_drive_102">
+														<input id="PROP_AUTO_MODEL_FIDtest_drive_102" type="radio" name="FIELDS[PROP_AUTO_MODEL_FIDtest_drive]" value="102">
+														<span class="afbf_radio_circle"></span>
+														<span class="afbf_radio_check"></span>
+														<span class="test-drive-form-car__img">
+															<img src="img/content/jetta-min.png" alt="">
+														</span>
+														<span class="test-drive-form-car__title">
+															Polo
+														</span>
+													</label>
+													<label for="PROP_AUTO_MODEL_FIDtest_drive_103">
+														<input id="PROP_AUTO_MODEL_FIDtest_drive_103" type="radio" name="FIELDS[PROP_AUTO_MODEL_FIDtest_drive]" value="103">
+														<span class="afbf_radio_circle"></span>
+														<span class="afbf_radio_check"></span>
+														<span class="test-drive-form-car__img">
+															<img src="img/content/tiguan-min.png" alt="">
+														</span>
+														<span class="test-drive-form-car__title">
+															Caddy Life
+														</span>
+													</label>
+													<label for="PROP_AUTO_MODEL_FIDtest_drive_104">
+														<input id="PROP_AUTO_MODEL_FIDtest_drive_104" type="radio" name="FIELDS[PROP_AUTO_MODEL_FIDtest_drive]" value="104">
+														<span class="afbf_radio_circle"></span>
+														<span class="afbf_radio_check"></span>
+														<span class="test-drive-form-car__img">
+															<img src="img/content/passat-min.png" alt="">
+														</span>
+														<span class="test-drive-form-car__title">
+															100
+														</span>
+													</label>
+												</div>
+												<div class="afbf_error_text">Это поле обязательно для заполнения</div>
 											</div>
 										</div>
-									</div>
-								</div>
-								<div class="content-item news__item content-item--right">
-									<div class="row content-inner">
-										<div class="col-xs-12 col-sm-5 content-item__headline">
-											<h3>Марка Volkswagen наградила победителей конкурса «Лучший дилер — 2016»</h3>
-										</div>
-										<div class="col-xs-12 col-sm-6 content-item__media">
-											<img src="img/content/service-img2.png" alt="">
-										</div>
-										<div class="col-xs-12 col-sm-5 content-item__info">
-											<p>
-												На протяжении 2016 года дилерские центры и их сотрудники боролись за звание лучших в различных категориях. В конкурсе приняли участие 115 дилеров, успешно реализующие автомобили Volkswagen на российском рынке более двух лет. Два дилера и шесть специалистов получили звание лучших.
-											</p>
-											<div class="t-center">
-												<a href="#" class="btn">Подробнее</a>
+										<div class="test-drive-form__item test-drive-form-map">
+											<div id="afbf_dealer_fidtest_drive" class="afbf_item_pole is_filled required">
+												<div class="afbf_name">
+													Дилер <span class="afbf_required_text">*</span>
+													<div class="afbf_hint"></div>
+												</div>
+												
+												<div class="map-wrap">
+													<div class="map-select">
+														<div class="afbf_radio" id="error_DEALER_FIDtest_drive">
+															<label for="DEALER_FIDtest_drive_18">
+																<input id="DEALER_FIDtest_drive_18" type="radio" name="FIELDS[DEALER_FIDtest_drive]" value="18">
+																<span class="afbf_radio_circle"></span>
+																<span class="afbf_radio_check"></span>
+																Атлант-М Сухарево
+															</label>
+															<label for="DEALER_FIDtest_drive_20">
+																<input id="DEALER_FIDtest_drive_20" type="radio" name="FIELDS[DEALER_FIDtest_drive]" value="20">
+																<span class="afbf_radio_circle"></span>
+																<span class="afbf_radio_check"></span>
+																test
+															</label>
+															<label for="DEALER_FIDtest_drive_39">
+																<input id="DEALER_FIDtest_drive_39" type="radio" name="FIELDS[DEALER_FIDtest_drive]" value="39">
+																<span class="afbf_radio_circle"></span>
+																<span class="afbf_radio_check"></span>
+																Атлант-М на Машиностроителей
+															</label>
+															<label for="DEALER_FIDtest_drive_40">
+																<input id="DEALER_FIDtest_drive_40" type="radio" name="FIELDS[DEALER_FIDtest_drive]" value="40">
+																<span class="afbf_radio_circle"></span>
+																<span class="afbf_radio_check"></span>
+																Атлант-М Уручье
+															</label>
+														</div>
+													</div>
+													<div class="map-inner-wrap">
+														<div id="map"></div>
+													</div>
+												</div>
+												<script>
+													function initMap() {
+														var icon_image = "img/content/icon.png";
+
+														var map = new google.maps.Map(document.getElementById('map'), {
+														    zoom: 10,
+														    zoomControl:true,
+														    zoomControlOptions: {
+												                position: google.maps.ControlPosition.RIGHT_BOTTOM
+												            },
+														    mapTypeControl: false,
+													        navigationControl: false,
+													        pancontrol:false,
+													        scaleControl: false,
+													        streetViewControl: false,
+													        scrollwheel: false,
+														    center: {lat: 53.901235, lng: 27.559503},
+														});
+
+														// Create an array of alphabetical characters used to label the markers.
+														var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+														var markers = locations.map(function(location, i) {
+														    return new google.maps.Marker({
+														    	position: location,
+														      	//label: labels[i % labels.length],
+														      	icon: icon_image,
+														      	labelClass: "customlabel",
+
+														    });
+														});
+
+														var clusterStyles = [
+														  {
+														    textColor: 'white',
+														    url: 'img/content/c-label.png',
+														    height: 64,
+														    width: 44,
+														  },
+														 {
+														    textColor: 'white',
+														    url: 'img/content/c-label.png',
+														    height: 64,
+														    width: 44,
+														  },
+														 {
+														    textColor: 'white',
+														    url: 'img/content/c-label.png',
+														    height: 64,
+														    width: 44,
+														  }
+														];
+
+														var mcOptions = {
+														    gridSize: 50,
+														    styles: clusterStyles,
+														    maxZoom: 15
+														};
+
+
+														// Add a marker clusterer to manage the markers.
+														var markerCluster = new MarkerClusterer(map, markers,mcOptions);
+
+														//resize map
+												        google.maps.event.addDomListener(window, "resize", function() {
+												            var center = map.getCenter();
+												            google.maps.event.trigger(map, "resize");
+												            map.setCenter(center);
+												        });
+													}
+													var locations = [
+														{lat: 53.886219002416, lng: 27.448922395706},					
+														{lat: 53.953964341822, lng: 27.718162536621},					
+														{lat: 53.850302048406, lng: 27.661573290825},										
+														{lat: 53.952524902002, lng: 27.715179920197}
+													];
+												</script>
+												<div class="afbf_error_text">Это поле обязательно для заполнения</div>
 											</div>
 										</div>
-									</div>
-								</div>
-								<div class="content-item news__item news__item--no-image content-item--left">
-									<div class="row content-inner">
-										<div class="col-xs-12 col-sm-5 content-item__headline">
-											<h3>Новые цены на Volkswagen Passat</h3>
-										</div>
-										<div class="col-xs-12 col-sm-6 content-item__media">
-											<!-- <img src="img/content/service-img3.png" alt=""> -->
-											<div class="content-item__date">23.12.2016</div>
-										</div>
-										<div class="col-xs-12 col-sm-5 content-item__info">
-											<p>
-												В связи с благоприятной рыночной конъюнктурой и ростом продаж в России марка Volkswagen — легковые автомобили репозиционирует Volkswagen Passat и объявляет о новых, более привлекательных ценах.
-											</p>
-											<div class="t-center">
-												<a href="#" class="btn">Подробнее</a>
+										<div class="test-drive-form__item test-drive-form-data">
+											<div id="afbf_appeal_fidtest_drive" class="afbf_item_pole is_filled required">
+												<div class="afbf_name static_name">
+													Обращение <span class="afbf_required_text">*</span>
+													<div class="afbf_hint"></div>
+												</div>
+												<div class="afbf_radio">
+													<div class="input-radio-wrap">
+														<label for="APPEAL_FIDtest_drive_59">
+															<input id="APPEAL_FIDtest_drive_59" type="radio" name="FIELDS[APPEAL_FIDtest_drive]" value="59">
+															<span class="afbf_radio_circle"></span>
+															<span class="afbf_radio_check"></span>
+															Г-н
+														</label>
+													</div>
+													<div class="input-radio-wrap">
+														<label for="APPEAL_FIDtest_drive_60">
+															<input id="APPEAL_FIDtest_drive_60" type="radio" name="FIELDS[APPEAL_FIDtest_drive]" value="60">
+															<span class="afbf_radio_circle"></span>
+															<span class="afbf_radio_check"></span>
+														Г-жа</label>
+													</div>
+												</div>
+												<div class="afbf_error_text">Это поле обязательно для заполнения</div>
+											</div>
+											<div id="afbf_fio_fidtest_drive" class="afbf_item_pole required">
+												<div class="afbf_name">
+													Имя 
+													<span class="afbf_required_text">*</span>
+													<div class="afbf_hint"></div>
+												</div>
+												<div class="afbf_inputtext_bg" id="error_FIO_FIDtest_drive">
+													<input type="text" size="40" id="FIO_FIDtest_drive1" name="FIELDS[FIO_FIDtest_drive]" value="" class="afbf_inputtext" onblur="if(this.value==''){this.value=''}" onclick="if(this.value==''){this.value=''}">
+													<div class="afbf_error_text">Это поле обязательно для заполнения</div>
+												</div>
+											</div>
+											<div id="afbf_last_name_fidtest_drive" class="afbf_item_pole required">
+												<div class="afbf_name">
+													Фамилия <span class="afbf_required_text">*</span>
+													<div class="afbf_hint"></div>
+												</div>
+												<div class="afbf_inputtext_bg" id="error_LAST_NAME_FIDtest_drive">
+													<input type="text" size="40" id="LAST_NAME_FIDtest_drive1" name="FIELDS[LAST_NAME_FIDtest_drive]" value="" class="afbf_inputtext" onblur="if(this.value==''){this.value=''}" onclick="if(this.value==''){this.value=''}">
+													<div class="afbf_error_text">Это поле обязательно для заполнения</div>
+												</div>
+											</div>
+											<div id="afbf_email_fidtest_drive" class="afbf_item_pole is_filled required is_email">
+												<div class="afbf_name">
+													Электронный адрес <span class="afbf_required_text">*</span>
+													<div class="afbf_hint"></div>
+												</div>
+												<div class="afbf_inputtext_bg" id="error_EMAIL_FIDtest_drive">
+													<input type="text" size="40" id="EMAIL_FIDtest_drive1" name="FIELDS[EMAIL_FIDtest_drive]" value="denis.i@nineseven.ru" class="afbf_inputtext">
+													<div class="afbf_error_text">Введён некорректный e-mail</div>
+												</div>
+											</div>
+											<div id="afbf_phone_fidtest_drive" class="afbf_item_pole required">
+												<div class="afbf_name">
+													Телефон <span class="afbf_required_text">*</span>
+													<div class="afbf_hint"></div>
+												</div>
+												<div class="afbf_inputtext_bg" id="error_PHONE_FIDtest_drive">
+													<input type="text" size="40" id="PHONE_FIDtest_drive1" name="FIELDS[PHONE_FIDtest_drive]" value="" class="afbf_inputtext" onblur="if(this.value==''){this.value=''}" onclick="if(this.value==''){this.value=''}">
+													<div class="afbf_error_text">Это поле обязательно для заполнения</div>
+												</div>
+											</div>
+											<div id="afbf_date_call_fidtest_drive" class="afbf_item_pole">
+												<div class="afbf_name">
+													Дата звонка
+													<div class="afbf_hint"></div>
+												</div>
+												<div class="afbf_inputtext_bg afbf_inputtext_bg_calendar" id="error_DATE_CALL_FIDtest_drive">
+													<input type="text" size="40" id="DATE_CALL_FIDtest_drive1" name="FIELDS[DATE_CALL_FIDtest_drive]" value="" class="afbf_inputtext" readonly="readonly" onclick="BX.calendar({node:this,field:'FIELDS[DATE_CALL_FIDtest_drive]',form:'',bTime:false,currentTime:'1501850088',bHideTime:true});">
+													<div class="afbf_calendar_icon">
+														<script type="text/javascript">
+														var phpVars = {
+															'ADMIN_THEME_ID': '.default',
+															'LANGUAGE_ID': 'ru',
+															'FORMAT_DATE': 'DD.MM.YYYY',
+															'FORMAT_DATETIME': 'DD.MM.YYYY HH:MI:SS',
+															'opt_context_ctrl': false,
+															'cookiePrefix': 'BITRIX_SM',
+															'titlePrefix': 'Volkswagen - ',
+															'bitrix_sessid': '0b8a0709fe63b79adf5e1a934a656860',
+															'messHideMenu': 'Скрыть меню',
+															'messShowMenu': 'Показать меню',
+															'messHideButtons': 'Уменьшить кнопки',
+															'messShowButtons': 'Увеличить кнопки',
+															'messFilterInactive': 'Поиск не используется - показаны все записи',
+															'messFilterActive': 'Используется поиск - показаны только найденные записи',
+															'messFilterLess': 'Скрыть условие поиска',
+															'messLoading': 'Загрузка...',
+															'messMenuLoading': 'Загрузка...',
+															'messMenuLoadingTitle': 'Загружаются пункты меню...',
+															'messNoData': '- Нет данных -',
+															'messExpandTabs': 'Развернуть все вкладки на одну страницу',
+															'messCollapseTabs': 'Свернуть вкладки',
+															'messPanelFixOn': 'Зафиксировать панель на экране',
+															'messPanelFixOff': 'Открепить панель',
+															'messPanelCollapse': 'Скрыть панель',
+															'messPanelExpand': 'Показать панель'
+														};
+														</script>
+														<img src="img/content/calendar-icon.gif" alt="Календарь" class="calendar-icon" onclick="BX.calendar({node:this, field:'FIELDS[DATE_CALL_FIDtest_drive]', form: '', bTime: false, currentTime: '1501850088', bHideTime: false});" onmouseover="BX.addClass(this, 'calendar-icon-hover');" onmouseout="BX.removeClass(this, 'calendar-icon-hover');" border="0">
+													</div>
+												</div>
+											</div>
+											<div id="afbf_time_call_fidtest_drive" class="afbf_item_pole">
+												<div class="afbf_name">
+													Время звонка
+													<div class="afbf_hint"></div>
+												</div>
+												<div class="afbf_inputtext_bg" id="error_TIME_CALL_FIDtest_drive">
+													<input type="text" size="40" id="TIME_CALL_FIDtest_drive1" name="FIELDS[TIME_CALL_FIDtest_drive]" value="" class="afbf_inputtext" onblur="if(this.value==''){this.value=''}" onclick="if(this.value==''){this.value=''}">
+												</div>
+											</div>
+											<div id="afbf_consent_1_fidtest_drive" class="afbf_item_pole is_filled required">
+												<div class="afbf_name static_name">
+													Согласие на обработку запроса <span class="afbf_required_text">*</span>						<div class="afbf_hint"></div>
+												</div>
+												<input type="hidden" name="FIELDS[CONSENT_1_FIDtest_drive]" value="">							<div class="afbf_checkbox">
+													<label for="CONSENT_1_FIDtest_drive_61">
+														<input id="CONSENT_1_FIDtest_drive_61" type="checkbox" name="FIELDS[CONSENT_1_FIDtest_drive][]" value="61" checked="checked">
+														<span class="afbf_checkbox_box">
+															<span class="afbf_checkbox_check"></span>
+														</span>
+														Да
+													</label>
+												</div>
+												<div class="afbf_error_text">Это поле обязательно для заполнения</div>
+											</div>
+											<div id="afbf_consent_2_fidtest_drive" class="afbf_item_pole is_filled required">
+												<div class="afbf_name static_name">
+													Согласие на дальнейшую коммуникацию <span class="afbf_required_text">*</span>						<div class="afbf_hint"></div>
+												</div>
+												<input type="hidden" name="FIELDS[CONSENT_2_FIDtest_drive]" value="">							<div class="afbf_checkbox">
+													<label for="CONSENT_2_FIDtest_drive_62">
+														<input id="CONSENT_2_FIDtest_drive_62" type="checkbox" name="FIELDS[CONSENT_2_FIDtest_drive][]" value="62" checked="checked">
+														<span class="afbf_checkbox_box">
+															<span class="afbf_checkbox_check"></span>
+														</span>
+														Да
+													</label>
+												</div>
+												<div class="afbf_error_text">Это поле обязательно для заполнения</div>
+											</div>
+											<input type="hidden" name="sessid" id="sessid" value="0b8a0709fe63b79adf5e1a934a656860">
+											<div class="afbf_submit_block">
+												<input type="submit" class="fb_close afbf_btn" id="fb_close_FIDtest_drive" name="SEND_FORM" value="Отправить">
 											</div>
 										</div>
-									</div>
+									</form>
 								</div>
 							</div>
 						</div>
@@ -757,23 +1017,24 @@
 					<!--end CONTENT-PART -->
 				</div>
 				<div class="page-top-anchor">
-						<div class="container-fluid">
-							<a href="#" class="page-top-anchor__link">
-								К началу
-								<svg viewBox="0 0 13 13" id="icon-link-back-to-top" width="100%" height="100%"><path d="M1 5.3L6.1.2c.3-.2.5-.2.7-.1L12 5.3v.2L10.4 7c-.1.1-.2.1-.2 0L6.5 3.3 2.8 7c0 .1-.1.1-.2 0L1 5.5v-.2z"></path><path d="M1 11.2l5.1-5.1c.2-.2.5-.2.7 0l5.1 5.1c.1.1.1.2 0 .2L10.4 13c-.1.1-.2.1-.2 0L6.5 9.3 2.8 13h-.2L1 11.4v-.2z"></path></svg>
-							</a>
-						</div>
+					<div class="container-fluid">
+						<a href="#" class="page-top-anchor__link">
+							К началу
+							<svg viewBox="0 0 13 13" id="icon-link-back-to-top" width="100%" height="100%"><path d="M1 5.3L6.1.2c.3-.2.5-.2.7-.1L12 5.3v.2L10.4 7c-.1.1-.2.1-.2 0L6.5 3.3 2.8 7c0 .1-.1.1-.2 0L1 5.5v-.2z"></path><path d="M1 11.2l5.1-5.1c.2-.2.5-.2.7 0l5.1 5.1c.1.1.1.2 0 .2L10.4 13c-.1.1-.2.1-.2 0L6.5 9.3 2.8 13h-.2L1 11.4v-.2z"></path></svg>
+						</a>
 					</div>
-					<div class="breadcrumbs">
-						<div class="container-fluid">
-							<div class="breadcrumbs__msg">Вы тут:</div>
-							<div class="breadcrumbs__wrap">
-								<a href="#" class="breadcrumbs__item breadcrumbs__item--home"></a>
-								<span class="breadcrumbs__item">Новости</span>
-							</div>
+				</div>
+				<div class="breadcrumbs">
+					<div class="container-fluid">
+						<div class="breadcrumbs__msg">Вы тут:</div>
+						<div class="breadcrumbs__wrap">
+							<a href="#" class="breadcrumbs__item breadcrumbs__item--home"></a>
+							<span class="breadcrumbs__item">Новости</span>
 						</div>
 					</div>
 				</div>
+			</div>
+
 			<footer class="page-footer">
 				<div class="container-fluid">
 					<div class="page-footer__wrap">
@@ -882,6 +1143,11 @@
 				</div>
 			</footer>
 		</div><!-- END LAYOUT-->
+
+
+		<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAezw_ZyiVIRm_QbuBFf6x29K12Sdb1YUk&amp;callback=initMap"></script>
+		<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+
 
 		<script src="js/libs.min.js"></script>
 		<script src="js/interface.js"></script>

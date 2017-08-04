@@ -7,6 +7,8 @@ var needsUpdate1 = true;
 var needsUpdate0 = true;
 
 
+// var resizeEvt;
+
 // var needsRemove = true;
 
 $(document).ready(function() {
@@ -236,6 +238,119 @@ $(document).ready(function() {
 		  $('.fs').styler();
 		}, 10)
 	}
+
+
+	//MAIN-SLIDER
+	if ($('.main-slider').length>0) {
+		$('.main-slider').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: true,
+			dots: false,
+			useTransform:true,
+			"accessibility": false,
+			//fade:true,
+		});
+	}
+
+
+
+	//POPUP-VIDEO
+	if ($('.popup-inline').length>0) {
+		$('.popup-inline').magnificPopup({
+	        //disableOn: 700,
+	        type: 'inline',
+	        mainClass: 'mfp-fade',
+	        removalDelay: 160,
+	        preloader: true,
+	        fixedContentPos: true,
+	        callbacks: {
+			    open: function() {
+			    	if ($('.popup-slider').length>0) {
+						$('.popup-slider-for').slick('setPosition');
+						$('.popup-slider-nav').slick('setPosition');
+					}
+			    },
+			 }
+	    });
+    }
+
+
+    //POPUP-SLIDER
+	$('.popup-slider-for').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		dots:true,
+		fade: true,
+		asNavFor: '.popup-slider-nav',
+		useTransform:true,
+		"accessibility": false,
+	});
+	$('.popup-slider-nav').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		asNavFor: '.popup-slider-for',
+		dots: false,
+		centerMode: true,
+		focusOnSelect: true,
+		arrows:true,
+		useTransform:true,
+		"accessibility": false,
+	});
+
+
+
+
+	//HINT
+	$("body").on("click", ".afbf_hint-toggle", function(e){
+		e.preventDefault();
+		$(this).next('.afbf_hint__info').fadeToggle();
+		if ($(".nano").length>0) {
+			$(".nano").nanoScroller();
+		}
+	});
+	$("body").on("click", ".afbf_hint-close", function(e){
+		e.preventDefault();
+		$(this).parents('.afbf_hint__info').fadeOut();
+	});
+
+
+
+	// $('.map').maphilight({
+	// 	fill: true,
+	// 	fillColor: '0099da',
+	// 	fillOpacity: 0.3,
+	// 	stroke: true,
+	// 	strokeColor: '0176a7',
+	// 	strokeOpacity: 1,
+	// 	strokeWidth: 1,
+	// 	fade: true,
+	// 	alwaysOn: false,
+	// 	neverOn: false,
+	// 	groupBy: false,
+	// });
+	if ($('.map').length>0) {
+		$('.map').mapify();
+	}
+	
+	$('area').click(function(e) {
+		e.preventDefault();
+		
+		// if ($(this).data('maphilight').alwaysOn) {
+		// 	$(this).data('maphilight', {
+		// 		'alwaysOn': false
+		// 	}).trigger('alwaysOn.maphilight');
+		// } else {
+		// 	$(this).data('maphilight', {
+		// 		'alwaysOn': true
+		// 	}).trigger('alwaysOn.maphilight');
+		// }
+
+		var dataID = $(this).data('id');
+		console.log(dataID);
+	});
+
 });
 
 
@@ -252,6 +367,12 @@ $(window).resize(function () {
 
 
 	leftMenuReinit();
+
+
+	// clearTimeout(resizeEvt);
+ //    resizeEvt = setTimeout(function(){
+ //        $('.map').maphilight();
+ //    }, 200);
 });
 
 
@@ -463,16 +584,21 @@ function leftMenuReinit(){
 
 
 // links pages
-// $('body').append(
-// 	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 200px;"> \
-// 		<a href="javascript:void(0);" style="float: right;background:#ccc; color:#000; padding: 5px 10px; text-decoration: none; font-size: 16px" onclick="$(this).parent().hide()">Close X</a> \
-// 	<style> \
-// 		#pages { padding: 10px 20px 0 50px; font-size: 18px; } \
-// 		#pages a { text-decoration: none; } \
-// 		#pages li { margin: 5px 0; } \
-// 	</style> \
-// 	<ol id="pages"> \
-// 		<li><a href="about.html">About</a></li> \
-// 		<li><a href="index.html">Index</a></li> \
-// 	</ol> \
-// </div>');
+$('body').append(
+	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 200px;"> \
+		<a href="javascript:void(0);" style="float: right;background:#ccc; color:#000; padding: 5px 10px; text-decoration: none; font-size: 16px" onclick="$(this).parent().hide()">Close X</a> \
+	<style> \
+		#pages { padding: 10px 20px 0 50px; font-size: 18px; } \
+		#pages a { text-decoration: none; } \
+		#pages li { margin: 5px 0; } \
+	</style> \
+	<ol id="pages"> \
+		<li><a href="index.html">Index</a></li> \
+		<li><a href="news.html">News</a></li> \
+		<li><a href="news-in.html">News-in</a></li> \
+		<li><a href="contacts-form.html">Контакты форма</a></li> \
+		<li><a href="kuz-form.html">Кузовной калькулятор</a></li> \
+		<li><a href="kuz-form-in.html">Кузовной калькулятор 2</a></li> \
+		<li><a href="test-drive-form.html">Тест драйв форма</a></li> \
+	</ol> \
+</div>');
