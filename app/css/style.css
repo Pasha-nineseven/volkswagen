@@ -3086,7 +3086,9 @@ a.breadcrumbs__item {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-#alx_feed_back_FIDcontacts_form .afbf_select, .afbf_textarea, .afbf_inputtext, #alx_feed_back_FIDcontacts_form .afbf_checkbox label {
+#alx_feed_back_FIDcontacts_form .afbf_select,
+.afbf_textarea, .afbf_inputtext,
+#alx_feed_back_FIDcontacts_form .afbf_checkbox label {
   color: #212121; }
 
 .afbf_item_pole .afbf_checkbox label {
@@ -3183,7 +3185,8 @@ a.breadcrumbs__item {
   background-color: #00b1eb; }
 
 #alx_feed_back_FIDservice_request.alx_feed_back,
-#alx_feed_back_FIDcontacts_form.alx_feed_back {
+#alx_feed_back_FIDcontacts_form.alx_feed_back,
+.alx_feed_back {
   width: 100% !important;
   max-width: 600px; }
 
@@ -3405,7 +3408,7 @@ a.carcase-item__info {
   vertical-align: top;
   margin-right: -4px; }
 
-.map {
+.map-image {
   width: 100% !important;
   background-repeat: no-repeat !important;
   background-size: contain;
@@ -3601,6 +3604,106 @@ a.carcase-item__info {
 .customlabel {
   line-height: 20px; }
 
+#alx_feed_back_FIDdwa_form .afbf_checkbox input[type=checkbox]:checked + .afbf_checkbox_box .afbf_checkbox_check:before,
+#alx_feed_back_FIDdwa_form.floating_labels .afbf_item_pole.is_filled .afbf_name,
+#alx_feed_back_FIDdwa_form.floating_labels .afbf_item_pole.is_focused .afbf_name {
+  color: #0099da; }
+
+#alx_feed_back_FIDdwa_form .afbf_feedback_poles .afbf_btn {
+  background: #00b1eb !important;
+  padding: 8px 24px 10px !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-transform: none !important; }
+
+#alx_feed_back_FIDdwa_form .afbf_feedback_poles .afbf_btn:hover {
+  background-color: #0068aa !important;
+  border-color: #0068aa; }
+
+img.calendar-icon-hover {
+  border: 0;
+  margin: 1px;
+  margin-left: 2px; }
+
+#alx_feed_back_FIDdwa_form .afbf_radio_circle {
+  border-color: #00b1eb; }
+
+#alx_feed_back_FIDdwa_form .afbf_checkbox.toggle label input[type=checkbox]:checked + .afbf_checkbox_box:after,
+#alx_feed_back_FIDdwa_form .afbf_radio_check {
+  background-color: #00b1eb; }
+
+#alx_feed_back_FIDdwa_form .afbf_item_pole.is_focused .afbf_select,
+#alx_feed_back_FIDdwa_form .afbf_item_pole.is_focused .afbf_textarea,
+#alx_feed_back_FIDdwa_form .afbf_item_pole.is_focused .afbf_inputtext {
+  border-color: #00b1eb; }
+
+#alx_feed_back_FIDtest_drive.alx_feed_back {
+  max-width: 100% !important; }
+
+#alx_feed_back_FIDtest_drive .afbf_feedback_poles .afbf_btn {
+  line-height: inherit; }
+
+.map-search {
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  width: 40%;
+  z-index: 9999; }
+  .map-search input[type="text"] {
+    padding-left: 40px;
+    padding-right: 40px; }
+
+.search-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 7px;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  background: transparent;
+  border: 0; }
+  .search-input-icon svg {
+    fill: #0099da;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+  .search-input-icon:hover svg {
+    fill: #c82e2d; }
+
+.search-input-submit {
+  width: 55px;
+  height: 100%;
+  -webkit-border-radius: 0 4px 4px 0;
+          border-radius: 0 4px 4px 0;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  right: -30px;
+  top: 0;
+  background: #0099da;
+  border: 1px solid #0099da;
+  color: #fff;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+  .search-input-submit:before {
+    content: "";
+    display: inline-block;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+    left: 50%;
+    margin-left: -15px;
+    top: 50%;
+    margin-top: -15px;
+    background: url(../img/svg/search-arrow.svg) center no-repeat; }
+  .search-input-submit:hover {
+    border: 1px solid #0068aa;
+    background: #0068aa; }
+
 @media screen and (max-width: 1400px) {
   .carcase-item {
     width: 20%;
@@ -3641,7 +3744,9 @@ a.carcase-item__info {
     padding-left: 60px;
     padding-right: 60px; }
   .test-drive-form-map {
-    padding: 0; } }
+    padding: 0; }
+  .map-search {
+    left: 60px; } }
 
 @media screen and (max-width: 1200px) {
   .main-slider__item {
@@ -3652,7 +3757,11 @@ a.carcase-item__info {
   .baggage-img-slider__img {
     height: 350px; }
   .main-bg-info {
-    padding: 80px 0; } }
+    padding: 80px 0; }
+  .map-select {
+    width: 30%; }
+  .map-inner-wrap {
+    width: 70%; } }
 
 @media screen and (max-width: 1024px) {
   .product-info-item {
@@ -3768,7 +3877,9 @@ a.carcase-item__info {
     padding-left: 20px;
     padding-right: 20px; }
   .test-drive-form-map {
-    padding: 0; } }
+    padding: 0; }
+  .map-search {
+    left: 20px; } }
 
 @media screen and (max-width: 992px) {
   .content-slider .slick-prev {
@@ -4006,7 +4117,30 @@ a.carcase-item__info {
     vertical-align: top;
     margin-right: 0; }
   .test-drive-form-car .afbf_radio label {
-    width: 50%; } }
+    width: 50%; }
+  .map-inner-wrap {
+    width: 0; }
+  .map-select {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    position: static; }
+    .map-select .afbf_radio {
+      margin: 0; }
+  .map-wrap {
+    height: auto; }
+  .map-search {
+    left: 0;
+    top: 0;
+    position: relative;
+    width: 100%;
+    padding: 0 20px; }
+  .search-input-icon {
+    left: 25px; }
+  .search-input-submit {
+    right: 20px; }
+  .map-search input[type="text"] {
+    padding-right: 70px; } }
 
 @media screen and (max-width: 600px) {
   .workarea table td {

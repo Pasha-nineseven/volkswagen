@@ -33,8 +33,9 @@ gulp.task('scripts', function(){
         'app/libs/r-tabs/jquery.responsiveTabs.js',
         'app/libs/formstyler/jquery.formstyler.min.js',
         'app/libs/nanoscroll/jquery.nanoscroller.js',
-        // 'app/libs/maphilight/jquery.maphilight.js',
-        'app/libs/mapify/jquery.mapify.js',
+        'app/libs/maphilight/jquery-maphilight.js',
+        'app/libs/maphilight/jquery-rwdImageMaps.js',
+        //'app/libs/mapify/jquery.mapify.js',
 
     ])
     .pipe(concat('libs.min.js'))

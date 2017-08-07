@@ -317,35 +317,33 @@ $(document).ready(function() {
 
 
 
-	// $('.map').maphilight({
-	// 	fill: true,
-	// 	fillColor: '0099da',
-	// 	fillOpacity: 0.3,
-	// 	stroke: true,
-	// 	strokeColor: '0176a7',
-	// 	strokeOpacity: 1,
-	// 	strokeWidth: 1,
-	// 	fade: true,
-	// 	alwaysOn: false,
-	// 	neverOn: false,
-	// 	groupBy: false,
-	// });
-	if ($('.map').length>0) {
-		$('.map').mapify();
-	}
-	
+	$('.map-image').maphilight({
+		fill: true,
+		fillColor: '0099da',
+		fillOpacity: 0.3,
+		stroke: true,
+		strokeColor: '0176a7',
+		strokeOpacity: 1,
+		strokeWidth: 1,
+		fade: true,
+		alwaysOn: false,
+		neverOn: false,
+		groupBy: false,
+	});
+	$('.map-image').rwdImageMaps();
+
 	$('area').click(function(e) {
 		e.preventDefault();
 		
-		// if ($(this).data('maphilight').alwaysOn) {
-		// 	$(this).data('maphilight', {
-		// 		'alwaysOn': false
-		// 	}).trigger('alwaysOn.maphilight');
-		// } else {
-		// 	$(this).data('maphilight', {
-		// 		'alwaysOn': true
-		// 	}).trigger('alwaysOn.maphilight');
-		// }
+		if ($(this).data('maphilight').alwaysOn) {
+			$(this).data('maphilight', {
+				'alwaysOn': false
+			}).trigger('alwaysOn.maphilight');
+		} else {
+			$(this).data('maphilight', {
+				'alwaysOn': true
+			}).trigger('alwaysOn.maphilight');
+		}
 
 		var dataID = $(this).data('id');
 		console.log(dataID);
@@ -353,10 +351,28 @@ $(document).ready(function() {
 
 });
 
-
+	
 
 
 $(window).resize(function () {
+	// var resizeEvt;
+	// clearTimeout(resizeEvt);
+ //    resizeEvt = setTimeout(function(){
+ //        $('.map-image').maphilight({
+	// 		fill: true,
+	// 		fillColor: '0099da',
+	// 		fillOpacity: 0.3,
+	// 		stroke: true,
+	// 		strokeColor: '0176a7',
+	// 		strokeOpacity: 1,
+	// 		strokeWidth: 1,
+	// 		fade: true,
+	// 		alwaysOn: false,
+	// 		neverOn: false,
+	// 		groupBy: false,
+	// 	});
+ //    }, 200);
+	
 	if ($('.details__slider').length>0) {
 		sliderDetailsStart();
 	}
@@ -369,6 +385,20 @@ $(window).resize(function () {
 	leftMenuReinit();
 
 
+
+	$('.map').maphilight({
+		fill: true,
+		fillColor: '0099da',
+		fillOpacity: 0.3,
+		stroke: true,
+		strokeColor: '0176a7',
+		strokeOpacity: 1,
+		strokeWidth: 1,
+		fade: true,
+		alwaysOn: false,
+		neverOn: false,
+		groupBy: false,
+	});
 	// clearTimeout(resizeEvt);
  //    resizeEvt = setTimeout(function(){
  //        $('.map').maphilight();
